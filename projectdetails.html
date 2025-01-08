@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohara: The City of Dreams</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #eaeff1;
+            margin: 0;
+            padding: 0;
+            color: #37474f;
+            line-height: 1.6;
+
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6a89cc, #4a69bd);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header nav {
+            margin-top: 1rem;
+        }
+
+        header nav a {
+            color: #d1e8ff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #fff;
+        }
+
+        /* Main Content */
+        main {
+            padding: 2rem 10%;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #2a5298;
+        }
+
+        section p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        /* Team Grid */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .team-member {
+            background: #f9fafc;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .team-member h4 {
+            font-size: 1.25rem;
+            color: #2a5298;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Call-to-Action Links */
+        section a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1.5rem;
+            background: #2a5298;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        section a:hover {
+            background: #1e3c72;
+        }
+
+        /* Ordered and Unordered Lists */
+        ol,
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Findings Section */
+        .findings,
+        .reflection {
+            background: #f9fafc;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .findings h2,
+        .reflection h2 {
+            color: #2a5298;
+        }
+
+        .findings p b,
+        .reflection p b {
+            color: #1e3c72;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #1e3c72;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #d1e8ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ohara: City of Dreams</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Business_case.html">Business Use Cases</a>
+            <a href="courser.html">Course Reflections</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Team Members</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h4>Ragahavendra Rao K</h4>
+                    <p>USN: 01FE23BCS073</p>
+                    <p>Role: Traffic Congestion and Routing Specialist</p>
+                </div>
+                <div class="team-member">
+                    <h4>Akshay</h4>
+                    <p>USN: 01FE23BCS099</p>
+                    <p>Role: Emergency Vehicle Routing Lead</p>
+                </div>
+                <div class="team-member">
+                    <h4>K Rohidas S</h4>
+                    <p>USN: 01FE23BCS240</p>
+                    <p>Role: Data Analysis and Algorithm Specialist</p>
+                </div>
+                <div class="team-member">
+                    <h4>Sanath Kumar</h4>
+                    <p>USN: 01FE23BCS0</p>
+                    <p>Role: Project Coordinator and Algorithm Designer</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="problem-space">
+            <h2>Problem Space and How It Was Arrived At</h2>
+            <p><b>Ohara: City of Dreams</b> aims to resolve key urban challenges by integrating efficient traffic management and sustainable development solutions. The project addresses critical issues such as congestion, emergency routing, smart parking, and public transport scheduling to create a highly functional urban environment.</p>
+            <p>Traffic congestion and inefficient public transit were identified as major barriers to smooth urban living. The project prioritizes optimizing vehicle flow, emergency response times, and sustainable transportation systems.</p>
+            <a href="city.html">Learn more about city design</a>
+        </section>
+
+        <section class="findings">
+            <h2>Findings from White Paper</h2>
+            <p><b>1. Congestion Trends:</b> Increasing traffic jams due to poor routing and signal management.</p>
+            <p><b>2. Public Transit Gaps:</b> Inconsistent schedules causing underutilization of buses and trains.</p>
+            <p><b>3. Parking Issues:</b> Time wasted searching for parking spots in busy areas.</p>
+            <p><b>4. Emergency Delays:</b> Lack of effective routing for emergency vehicles.</p>
+            <p><b>5. Environmental Impact:</b> High emissions from idling vehicles in congested zones.</p>
+        </section>
+
+        <section class="reflection">
+            <h2>Reflection on City Design</h2>
+            <p>The city design incorporates the following principles:</p>
+            <ul>
+                <li><b>Traffic Management:</b> Implementing algorithms to monitor and reduce congestion in real time.</li>
+                <li><b>Emergency Vehicle Routing:</b> Dynamic routing to ensure timely response for critical situations.</li>
+                <li><b>Sustainability:</b> Creating eco-friendly urban spaces with parks and green zones.</li>
+                <li><b>Technology Integration:</b> Leveraging AI and IoT for adaptive urban planning and traffic solutions.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Problem Definition</h2>
+            <p>The Ohara project addresses urban challenges by applying advanced algorithms and technology to improve traffic management, emergency response, and sustainable city planning. The vision is to create a seamless and efficient urban environment where innovation meets livability.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ohara Project | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>
