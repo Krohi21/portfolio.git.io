@@ -1,149 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Reflections</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Public Transport Scheduling and Smart Parking System</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
+            background-color: #eaeff1;
             margin: 0;
             padding: 0;
-            background-color: #eaeff1;
             color: #37474f;
             line-height: 1.6;
         }
-
-        nav {
-            background: linear-gradient(135deg, #6a89cc, #4a69bd);
-            color: white;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            color: #eaeff1;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            padding: 8px 16px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            background-color: #ffffff;
-            color: #4a69bd;
-        }
-
         header {
             background: linear-gradient(135deg, #6a89cc, #4a69bd);
             color: white;
+            padding: 20px 0;
             text-align: center;
-            padding: 20px 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-
         header h1 {
             margin: 0;
-            font-size: 2.2rem;
-            font-weight: 700;
+            font-size: 2.5rem;
         }
-
-        main {
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 30px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        h2, h3 {
+            color: #2e4053;
         }
-
-        main h2 {
-            font-size: 1.8rem;
-            color: #4a69bd;
-            border-bottom: 2px solid #eaeff1;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-weight: 700;
+        h2 {
+            margin-top: 30px;
+            font-size: 28px;
         }
-
-        .team-list {
-            list-style: none;
-            padding: 0;
+        p {
+            font-size: 16px;
+            margin-bottom: 16px;
         }
-
-        .team-list li {
-            margin: 20px 0;
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
-
-        .team-list a {
-            display: inline-block;
-            font-size: 1.2rem;
-            color: #37474f;
-            font-weight: 600;
-            text-decoration: none;
-            padding: 10px 20px;
-            border: 2px solid #d3d6d8;
+        ul li {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .content {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+        }
+        .section-title {
+            background-color: #dfe4ea;
+            padding: 10px 15px;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
             border-radius: 5px;
-            transition: all 0.3s ease;
-            background-color: #f4f7f9;
         }
-
-        .team-list a:hover {
-            background-color: #6a89cc;
-            color: white;
-            border-color: #6a89cc;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px 0;
-            background-color: #37474f;
-            color: #eaeff1;
-            font-size: 0.9rem;
-            margin-top: 40px;
+        .highlight {
+            color: #6a89cc;
+            font-weight: bold;
         }
     </style>
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projectov.html">Project Overview</a></li>
-            <li><a href="Business_case.html">Business Use Cases</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Team Reflections</h1>
-    </header>
-    <main>
-        <h2>Click To View Individual Reflections</h2>
-        <ul class="team-list">
-            <li><a></a>Raghavendra Rao K</a></li>
-            <li><a >Akshay J</a></li>
-            <li><a href="mycourser.html" target="_blank">K Rohidas Shenoy</a></li>
-            <li><a>Sanath Kumar</a></li>
-        </ul>
-    </main>
-    <footer>
-        <p>&copy; 2025 Team Reflections | Designed with Care</p>
-    </footer>
-</body>
+<header>
+    <h1>Public Transport Scheduling and Smart Parking System</h1>
+</header>
 
+<div class="content">
+    <h2>1. Challenges in Public Transport Scheduling</h2>
+    <ul>
+        <li><strong>Resource Allocation:</strong> Balancing vehicle availability with passenger demand to avoid overcrowding or underutilization.</li>
+        <li><strong>Time Efficiency:</strong> Ensuring that buses, trains, and other public transport options run on time, with minimal delays and optimal route planning.</li>
+        <li><strong>Real-time Data Integration:</strong> Incorporating real-time data such as traffic conditions, weather, and passenger behavior into scheduling decisions.</li>
+        <li><strong>Optimization Algorithms:</strong> Using techniques like dynamic scheduling and predictive analytics to adjust routes based on changing conditions.</li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2>2. Benefits of Efficient Public Transport Scheduling</h2>
+    <ul>
+        <li><strong>Improved Punctuality:</strong> Passengers experience fewer delays, improving the overall efficiency of the public transport network.</li>
+        <li><strong>Cost Reduction:</strong> Optimized scheduling helps reduce operational costs by preventing overstaffing and underutilization of resources.</li>
+        <li><strong>Increased Satisfaction:</strong> Passengers benefit from smoother rides with fewer delays, encouraging greater use of public transport.</li>
+        <li><strong>Environmental Impact:</strong> Well-scheduled transport reduces emissions by avoiding unnecessary vehicle usage and reducing traffic congestion.</li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2>3. Smart Parking System: Challenges and Solutions</h2>
+    <ul>
+        <li><strong>Space Availability:</strong> Efficiently managing parking space availability in real-time, especially in crowded urban areas.</li>
+        <li><strong>User Experience:</strong> Simplifying the parking process by offering real-time information on available spaces and facilitating easy reservations.</li>
+        <li><strong>Dynamic Pricing:</strong> Implementing pricing models that vary based on demand, time of day, or special events to balance the supply and demand of parking spaces.</li>
+        <li><strong>Security and Safety:</strong> Ensuring the safety of vehicles and users by integrating security features such as surveillance cameras and automated barriers.</li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2>4. Benefits of a Smart Parking System</h2>
+    <ul>
+        <li><strong>Efficient Use of Space:</strong> Maximizes parking capacity by guiding drivers to available spots, reducing search time and congestion.</li>
+        <li><strong>Convenient Experience:</strong> Users can find, reserve, and pay for parking spaces using mobile apps, making the process smoother and faster.</li>
+        <li><strong>Optimized Traffic Flow:</strong> Reduces traffic congestion caused by cars circling to find parking spaces, leading to smoother traffic flow.</li>
+        <li><strong>Environmental Benefits:</strong> Less fuel consumption and fewer emissions due to reduced searching for parking spaces.</li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2>5. Applications of Algorithms in Public Transport Scheduling</h2>
+    <ul>
+        <li><strong>Route Optimization:</strong>
+            <ul>
+                <li>Using graph algorithms like Dijkstra’s algorithm to find the most efficient route for vehicles based on traffic conditions.</li>
+                <li><strong>Algorithm:</strong> Dijkstra’s Shortest Path Algorithm, Bellman-Ford Algorithm.</li>
+            </ul>
+        </li>
+        <li><strong>Dynamic Scheduling:</strong>
+            <ul>
+                <li>Adjusting transport schedules in real-time based on passenger demand and traffic conditions.</li>
+                <li><strong>Algorithm:</strong> Genetic Algorithms, Simulated Annealing.</li>
+            </ul>
+        </li>
+        <li><strong>Capacity Planning:</strong>
+            <ul>
+                <li>Determining the optimal number of vehicles to deploy during peak and off-peak times to minimize overcrowding.</li>
+                <li><strong>Algorithm:</strong> Integer Linear Programming.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2>6. Applications of Algorithms in Smart Parking System</h2>
+    <ul>
+        <li><strong>Space Detection:</strong>
+            <ul>
+                <li>Detecting available parking spaces using sensors and integrating the data in real-time.</li>
+                <li><strong>Algorithm:</strong> K-means Clustering, Kalman Filter.</li>
+            </ul>
+        </li>
+        <li><strong>Dynamic Pricing:</strong>
+            <ul>
+                <li>Using predictive algorithms to adjust parking prices based on demand, time of day, and location.</li>
+                <li><strong>Algorithm:</strong> Reinforcement Learning, Machine Learning-based Regression Models.</li>
+            </ul>
+        </li>
+        <li><strong>Space Reservation:</strong>
+            <ul>
+                <li>Allowing users to book parking spots in advance via mobile applications.</li>
+                <li><strong>Algorithm:</strong> Interval Scheduling, Greedy Algorithms.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2>7. Integration of Public Transport Scheduling and Smart Parking System</h2>
+    <ul>
+        <li><strong>Seamless Experience:</strong> Integrating public transport and parking data to offer users an optimized travel and parking experience.</li>
+        <li><strong>Dynamic Coordination:</strong> Adjusting parking availability based on real-time traffic and public transport schedules.</li>
+        <li><strong>Real-time Notifications:</strong> Users receive notifications about both transport schedules and parking availability.</li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2>8. Algorithm Design Principles in Public Transport and Parking Systems</h2>
+    <ul>
+        <li><strong>Preprocessing vs Real-time Adjustments:</strong> Balancing between preprocessing data and making real-time adjustments based on new data.</li>
+        <li><strong>Trade-off Between Cost and Efficiency:</strong> Considering both financial and operational efficiency when designing algorithms for transport and parking systems.</li>
+        <li><strong>Scalability:</strong> Ensuring that algorithms can scale as cities grow, taking into account population growth, increasing vehicle numbers, and expanded public transport routes.</li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2>9. Conclusion</h2>
+    <p>Efficient public transport scheduling and smart parking systems are essential for improving urban mobility. By leveraging advanced algorithms and real-time data integration, we can optimize transport routes, reduce traffic congestion, enhance user experience, and create sustainable urban environments.</p>
+</div>
+
+</body>
 </html>
